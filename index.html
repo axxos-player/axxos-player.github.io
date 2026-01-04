@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -40,7 +40,7 @@
       <section class="hero" id="top">
         <div class="hero-copy">
           <p class="eyebrow">Designed for focused viewing</p>
-          <h1>Control every frame and decibel.</h1>
+          <h1>Own every frame and every volume jump.</h1>
           <p class="lede">Axxos Player blends cinematic playback with precision controls—Xtream, M3U, SMB, or your library—all with smart volume limiting and live recording so nothing interrupts the stream.</p>
           <div class="hero-actions">
             <a class="btn primary" href="#download">Download now</a>
@@ -78,9 +78,9 @@
                 <span>05:01</span>
               </div>
               <div class="controls">
-                <button aria-label="Previous track">⏮</button>
-                <button class="play" aria-label="Play or pause">⏯</button>
-                <button aria-label="Next track">⏭</button>
+                <button aria-label="Previous track">Prev</button>
+                <button class="play" aria-label="Play or pause">Play</button>
+                <button aria-label="Next track">Next</button>
               </div>
             </div>
             <div class="queue">
@@ -101,7 +101,7 @@
               <div class="queue-item">
                 <div>
                   <p class="title">Quiet Phase</p>
-                  <p class="subtitle">Podcast · Ep. 12</p>
+                  <p class="subtitle">Podcast - Ep. 12</p>
                 </div>
                 <span class="length">26:44</span>
               </div>
@@ -129,8 +129,18 @@
           </article>
           <article class="feature-card">
             <div class="icon-chip">📺</div>
-            <h3>PiP & casting</h3>
-            <p>Pop out Picture-in-Picture for multitasking and cast instantly to AirPlay or Chromecast displays.</p>
+            <h3>Picture-in-Picture</h3>
+            <p>Pop out PiP to keep watching while you browse guides, chats, or other apps.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon-chip">📡</div>
+            <h3>AirPlay</h3>
+            <p>Stream to your Apple TV or AirPlay-ready displays with synced controls.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon-chip">💠</div>
+            <h3>Chromecast</h3>
+            <p>Cast instantly to Chromecast devices with stable handoff from iOS or macOS.</p>
           </article>
           <article class="feature-card">
             <div class="icon-chip">☁️</div>
@@ -253,12 +263,13 @@
   </div>
   <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme">
     <span class="dot"></span>
-    <span class="label">Theme</span>
+    <span class="label" id="theme-label">Theme</span>
   </button>
   <script>
     (() => {
       const root = document.documentElement;
       const toggle = document.getElementById('theme-toggle');
+      const label = document.getElementById('theme-label');
       const stored = localStorage.getItem('axxos-theme');
       const initial = stored === 'grey' ? 'grey' : 'blue';
       const apply = (theme) => {
@@ -266,6 +277,7 @@
         root.setAttribute('data-theme', mode);
         toggle.setAttribute('data-theme', mode);
         localStorage.setItem('axxos-theme', mode);
+        if (label) label.textContent = mode === 'grey' ? 'Grey' : 'Blue';
       };
       apply(initial);
       toggle.addEventListener('click', () => {
@@ -276,3 +288,4 @@
   </script>
 </body>
 </html>
+
