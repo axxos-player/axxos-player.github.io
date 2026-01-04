@@ -1,0 +1,32 @@
+PRIVACY POLICY
+Last Updated: January 3, 2026
+
+1. DATA MINIMIZATION PRINCIPLE
+Axxos and Axxos Player are designed to be "privacy-first." We do not operate central servers that store your streaming habits or credentials.
+
+2. INFORMATION WE DO NOT COLLECT
+- We do NOT collect your IPTV credentials (usernames/passwords).
+- We do NOT track which channels or movies you watch.
+- We do NOT sell your data to third parties.
+
+3. DATA STORED ON-DEVICE
+The following data is stored locally on your device (and may sync via your private iCloud if enabled):
+- Playlist URLs and Xtream credentials.
+- SMB network paths and login tokens.
+- Favorites, "Continue Watching" history, and local metadata cache.
+
+4. NETWORK ACCESS & THIRD PARTIES
+When you play a stream, the App connects directly to your provider. 
+- Your IP Address: Is visible to your content provider, not us.
+- Local Network: The App requests local network permission only to facilitate SMB/File sharing connections.
+- Metadata: We may fetch posters/descriptions from third-party APIs (e.g., TMDB). These requests are anonymous.
+
+5. 2026 DATA RIGHTS (CCPA/GDPR/GPC)
+- We honor "Global Privacy Control" (GPC) signals. 
+- Since we store no identifiable data on our servers, there is no data to "delete" or "export" from our side; deleting the App removes all local data.
+
+6. CHILDREN’S PRIVACY
+The App is not intended for children under 13. We do not knowingly collect information from children.
+
+7. CONTACT
+Privacy Inquiries: ossoftwaredev@gmail.com

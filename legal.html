@@ -37,17 +37,21 @@
       </section>
 
       <section class="feature-grid">
-        <article class="feature-card">
+        <article class="feature-card legal-card">
+          <div class="icon-chip">🛡</div>
+          <h3>End User License Agreement & Terms of Service</h3>
+          <p class="legal-updated">Last Updated: January 3, 2026</p>
+          <div class="legal-box" id="terms-box">
+            <pre id="terms-content">Loading terms…</pre>
+          </div>
+        </article>
+        <article class="feature-card legal-card">
           <div class="icon-chip">📄</div>
           <h3>Privacy Policy</h3>
-          <p>How we handle account details, sync data, and diagnostics across tvOS, macOS, and iOS.</p>
-          <a class="btn small secondary" href="mailto:ossoftwaredev@gmail.com?subject=Privacy%20Policy%20Request">Request copy</a>
-        </article>
-        <article class="feature-card">
-          <div class="icon-chip">🛡</div>
-          <h3>Terms of Use</h3>
-          <p>Guidelines for streaming, recording, and using Xtream/M3U/SMB sources within Axxos Player.</p>
-          <a class="btn small secondary" href="mailto:ossoftwaredev@gmail.com?subject=Terms%20of%20Use%20Request">Request copy</a>
+          <p class="legal-updated">Last Updated: January 3, 2026</p>
+          <div class="legal-box" id="privacy-box">
+            <pre id="privacy-content">Loading privacy policy…</pre>
+          </div>
         </article>
         <article class="feature-card">
           <div class="icon-chip">⚙️</div>
@@ -57,6 +61,20 @@
         </article>
       </section>
     </main>
+    <script>
+      async function loadLegal(id, file) {
+        try {
+          const res = await fetch(file);
+          if (!res.ok) throw new Error('Failed to load');
+          const text = await res.text();
+          document.getElementById(id).textContent = text;
+        } catch (err) {
+          document.getElementById(id).textContent = 'Unable to load this document right now. Please email ossoftwaredev@gmail.com.';
+        }
+      }
+      loadLegal('terms-content', 'terms-eula.txt');
+      loadLegal('privacy-content', 'privacy-policy.txt');
+    </script>
   </div>
 </body>
 </html>
