@@ -267,33 +267,10 @@
       <p class="caption">� 2026 Nexios Player. Built for clarity.</p>
     </footer>
   </div>
-  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme">
-    <span class="dot"></span>
-    <span class="label" id="theme-label">Theme</span>
-  </button>
-  <script>
-    (() => {
-      const root = document.documentElement;
-      const toggle = document.getElementById('theme-toggle');
-      const label = document.getElementById('theme-label');
-      const stored = localStorage.getItem('axxos-theme');
-      const initial = stored === 'grey' ? 'grey' : 'blue';
-      const apply = (theme) => {
-        const mode = theme === 'grey' ? 'grey' : 'blue';
-        root.setAttribute('data-theme', mode);
-        toggle.setAttribute('data-theme', mode);
-        localStorage.setItem('axxos-theme', mode);
-        if (label) label.textContent = mode === 'grey' ? 'Grey' : 'Blue';
-      };
-      apply(initial);
-      toggle.addEventListener('click', () => {
-        const next = root.getAttribute('data-theme') === 'grey' ? 'blue' : 'grey';
-        apply(next);
-      });
-    })();
-  </script>
+  
 </body>
 </html>
+
 
 
 
