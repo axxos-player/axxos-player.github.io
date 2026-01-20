@@ -25,6 +25,5 @@ In accordance with 2026 App Store Accountability regulations:
 TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE DEVELOPER SHALL NOT BE LIABLE FOR ANY DAMAGES ARISING FROM YOUR USE OF THE APP OR THE CONTENT ACCESSED THROUGH IT. THE APP IS PROVIDED "AS IS."
 
 7. CONTACT
-Support: ossoftwaredev@gmail.com
-
+Support: support@nexios-media.com
 

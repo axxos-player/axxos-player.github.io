@@ -969,8 +969,9 @@ main {
 }
 
 .store-badge {
-  width: 180px;
-  height: auto;
+  height: 44px;
+  width: auto;
+  max-width: 100%;
 }
 
 .cta {

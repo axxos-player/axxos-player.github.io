@@ -29,6 +29,5 @@ When you play a stream, the App connects directly to your provider.
 The App is not intended for children under 13. We do not knowingly collect information from children.
 
 7. CONTACT
-Privacy Inquiries: ossoftwaredev@gmail.com
-
+Privacy Inquiries: support@nexios-media.com
 
